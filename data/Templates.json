@@ -1,0 +1,12 @@
+[
+  {
+    "type": "Welcome",
+    "messageTemplate":
+        "GREETINGMESSAGE GUESTNAME and welcome to COMPANYNAME! Room ROOMNUMBER is now ready for you. Enjoy your stay and let us know if you need anything."
+  },
+  {
+    "type": "Goodbye",
+    "messageTemplate":
+        "GREETINGMESSAGE GUESTNAME, thank you for staying at COMPANYNAME! We hope you enjoyed your stay in COMPANYCITY. Safe travels!"
+  }
+]
