@@ -14,8 +14,8 @@ class MessageGenerator {
         const city = this.company.city;
         const timezone = this.company.timezone;
         const template = this.template.messageTemplate;
-        const startTime = new Date(this.guest.reservation.startTimestamp).toDateString();
-        const endTime = new Date(this.guest.reservation.endTimestamp).toDateString();
+        const startTime = new Date(this.guest.reservation.startTimestamp).toLocaleString("en-US", { timeZone: timezone });
+        const endTime = new Date(this.guest.reservation.endTimestamp).toLocaleString("en-US", { timeZone: timezone });
 
         // Replace keywords in templates with values from the json objects
         const parsedMessage = template.split(/\b/).reduce((acc, curVal) => {
