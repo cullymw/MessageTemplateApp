@@ -9,19 +9,29 @@
 
 ### Command arguments 
 -g, --guest -> Guest's ID number that the message is getting sent to **required**
+
 -c, --company -> Company ID number that the message is from **required**
+
 -t, --template -> The type of template the message should be generated from **required**
+
 -n, --newTemplate -> Optional flag that is used to generate a new template
 
 ### Message template variables
 When generating a new template using the --newTemplate argument, here are the available variables to be generated from the json objects
 `GREETINGMESSAGE` - Creates a greeting based on the time of day in the company's timezone
+
 `GUESTNAME` - The guests first name
+
 `COMPANYNAME`
+
 `ROOMNUMBER`
+
 `COMPANYCITY`
+
 `COMPANYTIMEZONE`
+
 `STARTTIME` - The start time of the guest's reservation in the company's timezone
+
 `ENDTIME` - The end time of the guest's reservation in the company's timezone
 
 ## Overview of design desicions 
